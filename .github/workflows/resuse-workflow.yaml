@@ -14,3 +14,5 @@ jobs:
         run: dokcer images
       - name: creating a container
         run: docker run -itd --name apache2 -p 8080:80 httpd
+      - name: verify
+        run: curl http://localhost:8080
