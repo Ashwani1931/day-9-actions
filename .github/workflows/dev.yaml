@@ -4,4 +4,4 @@ on:
   workflow_dispatch:
 jobs:
   prod:
-   uses: ./.github/workflows/reuse-workflow.yaml
+    uses: ./.github/workflows/resuse-workflow.yaml
