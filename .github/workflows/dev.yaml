@@ -2,5 +2,8 @@ name: production
 on: 
   push:
   workflow_dispatch:
-  
+jobs:
+  prod:
+   uses: ./.github/workflows/reuse-workflow.yaml
+
     
