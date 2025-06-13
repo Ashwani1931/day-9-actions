@@ -1,4 +1,4 @@
-name: shell-script
+name: multi job
 on:
    workflow_dispatch:
 jobs:
