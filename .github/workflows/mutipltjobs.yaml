@@ -1,0 +1,20 @@
+name: shell-script
+on:
+   workflow_dispatch:
+jobs:
+  job1:
+    name: using shell-script
+    runs-on: ubuntu-latest
+    steps:
+      - name: installation
+        run: sudo apt install cowsay -y
+      - name: run the cmd
+        run: cowsay -f dragon "this is my place i am dragon" >> ash.txt
+  job2:
+    name: using shell-script
+    runs-on: ubuntu-latest
+    steps:
+      - name: read te file
+        run: cat ash.txt
+      - name: find the word "place"
+        run: grep -i place ash.txt     
