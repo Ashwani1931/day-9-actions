@@ -12,7 +12,7 @@ jobs:
         run: ls -la
       - name: run cmds
         run: |
-               chmod +x shell.sh
-               ./shell.sh
+              chmod +x shell.sh
+              ./shell.sh
 
      
