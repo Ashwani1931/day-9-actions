@@ -12,6 +12,7 @@ jobs:
         run: cowsay -f dragon "this is my place i am dragon" >> ash.txt
       - uses: actions/upload-artifact@v4
         with:
+          name: myash
           path: ash.txt
   job2:
     needs: job1
@@ -19,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
+        with:
+          name: myash
       - name: read te file
         run: cat ash.txt
       - name: find the word "place"
