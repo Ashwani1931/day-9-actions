@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: actions
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: check the file
         run: ls -la
       - name: run cmds
