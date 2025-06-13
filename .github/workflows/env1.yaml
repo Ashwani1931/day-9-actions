@@ -1,6 +1,5 @@
-name: secret and env 
+name: secret and env 1
 on:
-  push:
   workflow_dispatch:
 jobs:
   docker:
